@@ -14,7 +14,7 @@ ReactDOM.render(
       <ConnectedRouter history={history}>
         <Switch>
           <Route exact path="/" component={App}/>
-          <Route path="*" render={() => (<h1>PAGE NOT FOUND</h1>)}/>
+          <Route path="*" render={() => (<h1>404 PAGE NOT FOUND</h1>)}/>
         </Switch>
       </ConnectedRouter>
     </Provider>
