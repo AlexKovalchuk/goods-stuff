@@ -6,7 +6,6 @@ import { devToolsEnhancer } from "redux-devtools-extension/logOnlyInProduction";
 import createSagaMiddleware from 'redux-saga';
 import {saga} from "./sagas";
 
-
 const sagaMiddleware = createSagaMiddleware();
 
 const initialState = {};

@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.scss';
+import Routes from './components/routes/Routes'
+import Navigation from './components/navigatiopn/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <h1>Alex and Bohdan are champions</h1>
+      <Navigation />
+      <Routes />
     </div>
   );
 }
