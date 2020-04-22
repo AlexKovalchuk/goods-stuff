@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
 import Routes from './components/routes/Routes'
-import Navigation from './components/navigatiopn/Navigation';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Header />
       <Routes />
     </div>
   );

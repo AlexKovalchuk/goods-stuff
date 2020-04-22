@@ -1,15 +1,14 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {routes} from "../routes/router-path";
-import './Navigation.scss'
+import './header.scss'
 import Logo from "../../assets/images/logo.svg";
 import {connect} from "react-redux";
 
-const NavigationComponent = props => {
+const HeaderComponent = props => {
   const {root} = routes;
   return (
-    <div className="header-wrapper">
-      <header className="header-item">
+      <header className="header-wrapper">
         <Link to={root} className="react-link">
           <img className="logo" src={Logo} alt="React" />
           <h2>Home</h2>
@@ -17,13 +16,11 @@ const NavigationComponent = props => {
         <nav>
           <ul className="site-navigation">
             <li className='cart-icon-navigation-container'>
-              <Link to={root}>page one</Link>
-              <Link to={root}>page two</Link>
+              <Link to={'soc'}>soc net</Link>
             </li>
           </ul>
         </nav>
       </header>
-    </div>
   );
 };
 
@@ -37,5 +34,5 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavigationComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderComponent);
 

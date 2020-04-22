@@ -1,24 +1,19 @@
 .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
   background: #20232a;
   color: #fff;
-  padding: 8px 0;
   width: 100%;
 
-  .header-item {
+  .react-link {
     display: flex;
-    justify-content: space-between;
-    height: 35px;
-    padding: 0 50px;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 
-    .react-link {
-      display: flex;
-      align-items: center;
-      color: #fff;
-      text-decoration: none;
-
-      img {
-        max-height: 100%;
-      }
+    img {
+      max-height: 100%;
     }
   }
 }
