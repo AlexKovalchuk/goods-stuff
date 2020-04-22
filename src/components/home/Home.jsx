@@ -9,7 +9,7 @@ const HomeComponent = props => {
   };
 
   return (
-    <div className="home-container common-wrapper">
+    <div className="home-container">
       <h1 className="home-title">HOME</h1>
       <h2>It is {new Date().toLocaleTimeString()}.</h2>
       <button onClick={clickHandler}>proto</button>

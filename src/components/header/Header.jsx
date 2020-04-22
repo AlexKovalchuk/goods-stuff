@@ -6,7 +6,7 @@ import Logo from "../../assets/images/logo.svg";
 import {connect} from "react-redux";
 
 const HeaderComponent = props => {
-  const {root} = routes;
+  const {root, collections, boutique} = routes;
   return (
       <header className="header-wrapper">
         <Link to={root} className="react-link">
@@ -16,7 +16,8 @@ const HeaderComponent = props => {
         <nav>
           <ul className="site-navigation">
             <li className='cart-icon-navigation-container'>
-              <Link to={'soc'}>soc net</Link>
+              <Link to={collections}>collections</Link>
+              <Link to={boutique}>boutique</Link>
             </li>
           </ul>
         </nav>
