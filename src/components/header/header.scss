@@ -1,15 +1,15 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 35px;
-  background: #20232a;
-  color: #fff;
+  background: silver;
+  position: absolute;
+  top: 0;
   width: 100%;
+  height: 35px;
 
   .react-link {
     display: flex;
     align-items: center;
-    color: #fff;
     text-decoration: none;
 
     img {
@@ -42,7 +42,6 @@
 
     a {
       border: 0;
-      color: #a8a9ac;
       display: flex;
       font-size: 16px;
       font-weight: 300;
@@ -51,7 +50,7 @@
       text-decoration: none;
 
       &:hover {
-        color: #fff;
+        color: dodgerblue;
       }
     }
   }
