@@ -32,7 +32,7 @@ const Routes = () => {
   } = routes;
   return (
       <div className="component-container">
-        <Suspense fallback={Preloader}>
+        <Suspense fallback={<Preloader />}>
           <Switch>
             <Route exact path={root} component={Home}/>
             <Route path={collections} component={Collections}/>
