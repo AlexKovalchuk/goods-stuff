@@ -10,4 +10,5 @@ export const routes = {
   careers: '/careers',
   social: '/social',
   contacts: '/contacts',
+  navigation: '/navigation',
 };

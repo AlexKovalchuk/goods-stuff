@@ -14,6 +14,7 @@ const PressRoom = lazy(() => import('../pressRoom/PressRoom'));
 const Careers = lazy(() => import('../careers/Careers'));
 const Social = lazy(() => import('../social/Social'));
 const Contacts = lazy(() => import('../contacts/Contacts'));
+const Navigation = lazy(() => import('../navigation/Navigation'));
 const PageNotFound = lazy(() => import('../pageNotFound/pageNotFound'));
 
 const Routes = () => {
@@ -29,6 +30,7 @@ const Routes = () => {
     careers,
     social,
     contacts,
+    navigation
   } = routes;
   return (
       <div className="component-container">
@@ -45,6 +47,7 @@ const Routes = () => {
             <Route path={careers} component={Careers}/>
             <Route path={social} component={Social}/>
             <Route path={contacts} component={Contacts}/>
+            <Route path={navigation} component={Navigation}/>
             <Route component={PageNotFound}/>
           </Switch>
         </Suspense>

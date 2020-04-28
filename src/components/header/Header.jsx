@@ -2,22 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {routes} from "../routes/router-path";
 import './header.scss'
-import Logo from "../../assets/images/logo.svg";
 import {connect} from "react-redux";
 
 const HeaderComponent = props => {
-  const {root, collections, boutique} = routes;
+  const {navigation} = routes;
   return (
       <header className="header-wrapper">
-        <Link to={root} className="react-link">
-          <img className="logo" src={Logo} alt="React" />
-          <h2>Home</h2>
-        </Link>
-        <nav>
+        <nav className="react-link">
           <ul className="site-navigation">
             <li className='cart-icon-navigation-container'>
-              <Link to={collections}>collections</Link>
-              <Link to={boutique}>boutique</Link>
+              <Link to={navigation} className="react-link">M</Link>
             </li>
           </ul>
         </nav>
@@ -26,14 +20,10 @@ const HeaderComponent = props => {
 };
 
 const mapStateToProps = state => {
-  const {cart} = state;
-  return {
-    cart,
-  };
+  return {};
 };
 
-const mapDispatchToProps = {
-};
+const mapDispatchToProps = {};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderComponent);
 
